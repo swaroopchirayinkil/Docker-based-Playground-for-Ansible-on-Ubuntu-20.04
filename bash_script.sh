@@ -61,7 +61,7 @@ make
 
 make up
 
-echo '##############################-Ansible to node1&node2 connection checking-##############################' >> /usr/local/src/ansible_playground_script_log.txt
+echo '##############################-Ansible to node connection checking-##############################' >> /usr/local/src/ansible_playground_script_log.txt
 ansible node1 -m ping >>  /usr/local/src/ansible_playground_script_log.txt
 ansible node2 -m ping >>  /usr/local/src/ansible_playground_script_log.txt
 ansible node3 -m ping >>  /usr/local/src/ansible_playground_script_log.txt
