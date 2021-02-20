@@ -54,11 +54,12 @@ git clone https://github.com/kbairak/ansible-playground
 cd ansible-playground
 apt install make -y
 make
-#Creating node1 node2 in docker container
+#Creating node1 node2 node3 in docker container
 ./bin/add_host node1
 ./bin/add_host node2
-make up
+./bin/add_host node3
 
+make up
 
 echo '##############################-Ansible to node1&node2 connection checking-##############################' >> /usr/local/src/ansible_playground_script_log.txt
 ansible node1 -m ping >>  /usr/local/src/ansible_playground_script_log.txt
