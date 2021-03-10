@@ -8,7 +8,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update -y
 apt-cache policy docker-ce
 sudo apt install docker-ce -y
-echo '#############################################-Docker installed-#############################################' >> /usr/local/src/ansible_playground_script_log.txt
+echo '##############################################-Docker installed-##############################################' >> /usr/local/src/ansible_playground_script_log.txt
 sudo systemctl status docker | head -10 >> /usr/local/src/ansible_playground_script_log.txt
 
 
